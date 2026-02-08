@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITALVIBE | Performance Meal Prep & Smoothies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">VITALVIBE<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#subscribe">Subscription</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-small">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Performance Optimized</span>
+                <h1>FUEL YOUR WORKDAY WITHOUT THE CRASH</h1>
+                <p>High-protein smoothies and meal prep designed for busy professionals. Optimized macros. Delivered weekly.</p>
+                <div class="hero-btns">
+                    <a href="#subscribe" class="btn-primary">Build Your Plan</a>
+                    <a href="#menu" class="btn-secondary">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title">Signature Performance Menu</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1553531384-cc64ac80f931?auto=format&fit=crop&q=80&w=400');"></div>
+                    <div class="card-body">
+                        <h3>The Iron Executive</h3>
+                        <p>Spinach, Pineapple, Whey Protein, Creatine. 25g Protein.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=400');"></div>
+                    <div class="card-body">
+                        <h3>Keto Power Bowl</h3>
+                        <p>Grilled Chicken, Avocado, Kale, Seeds. 40g Protein.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title light">Weekly Subscription Planner</h2>
+            <div class="planner-wrapper">
+                <div class="selection-area">
+                    <h3>Add to your Box</h3>
+                    <div class="add-item" onclick="addItem('Executive Smoothie', 25, 350)">
+                        <span>+ Executive Smoothie</span>
+                        <span class="price">25g Prot</span>
+                    </div>
+                    <div class="add-item" onclick="addItem('Keto Bowl', 45, 600)">
+                        <span>+ Keto Power Bowl</span>
+                        <span class="price">45g Prot</span>
+                    </div>
+                </div>
+                <div class="summary-area">
+                    <h3>Your Weekly Stats</h3>
+                    <div class="stat-box">
+                        <p>Total Protein: <span id="total-protein">0</span>g</p>
+                        <p>Total Calories: <span id="total-cals">0</span></p>
+                    </div>
+                    <ul id="cart-list"></ul>
+                    <button class="btn-primary full-width">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Trusted by Professionals</h2>
+            <blockquote class="testimonial">
+                "FUEL saved me 10 hours a week in meal prep. My energy levels during afternoon meetings are through the roof."
+                <footer>— Sarah J., Senior Consultant</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="grid col-2">
+                <div>
+                    <h2 class="section-title">Built by Michael Awanayah</h2>
+                    <p>We believe that high-performance work requires high-performance fuel. Michael started this brand to bridge the gap between "fast food" and "healthy eating" for the modern London professional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="grid col-2">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p><strong>Phone:</strong> +447894671345</p>
+                    <p><strong>Email:</strong> Michael.awanayah@gmail.com</p>
+                </div>
+                <form action="https://formspree.io/f/Michael.awanayah@gmail.com" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Work Email" required>
+                    <textarea name="message" placeholder="Special requirements?"></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FUEL. Founded by Michael Awanayah.</p>
+            <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

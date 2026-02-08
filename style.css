@@ -1,0 +1,57 @@
+:root {
+    --primary: #CCFF00; /* Neon Lime - Athletic vibe */
+    --dark: #121212;
+    --light: #F4F4F4;
+    --text: #333;
+    --transition: 0.3s ease;
+}
+
+* { margin:0; padding:0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; }
+
+h1, h2, h3 { font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 80px 0; }
+.bg-dark { background: var(--dark); color: white; }
+.bg-light { background: var(--light); }
+.text-center { text-align: center; }
+
+/* NAV */
+.navbar { background: var(--dark); padding: 20px 0; position: sticky; top:0; z-index: 1000; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'Anton'; font-size: 2rem; color: white; text-decoration: none; }
+.logo span { color: var(--primary); }
+.nav-links { display: flex; list-style: none; align-items: center; }
+.nav-links li a { color: white; text-decoration: none; margin-left: 30px; font-weight: bold; font-size: 0.9rem; }
+
+/* HERO */
+.hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&q=80&w=1600'); 
+        height: 80vh; background-size: cover; background-position: center; display: flex; align-items: center; color: white; }
+.hero h1 { font-size: 4rem; line-height: 1; margin-bottom: 20px; }
+.badge { background: var(--primary); color: black; padding: 5px 15px; font-weight: bold; border-radius: 50px; }
+
+/* BUTTONS */
+.btn-primary { background: var(--primary); color: black; padding: 15px 35px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; display: inline-block; transition: var(--transition); }
+.btn-primary:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(204, 255, 0, 0.4); }
+.full-width { width: 100%; margin-top: 20px; }
+
+/* CARDS */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.card-img { height: 250px; background-size: cover; background-position: center; }
+.card-body { padding: 20px; }
+
+/* PLANNER AREA */
+.planner-wrapper { display: grid; grid-template-columns: 1fr 350px; gap: 40px; }
+.add-item { background: #222; padding: 20px; margin-bottom: 10px; cursor: pointer; display: flex; justify-content: space-between; border-radius: 5px; }
+.add-item:hover { border: 1px solid var(--primary); }
+.stat-box { background: #333; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+
+/* FORMS */
+.contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .planner-wrapper { grid-template-columns: 1fr; }
+}
